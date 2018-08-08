@@ -281,92 +281,92 @@ function learnAlphabetsPage(page){
 		<span class='wordFor'>JUG</span>\
 		</div>\
 		";
-	}
-// To be continud	
+	}	
 	if(page=='11'){
 		document.getElementById('letter').innerHTML = "<img src='images/Letters/K.png' style='width:15%;height:20%;margin:10px'>";
 		document.getElementById('letterFor').innerHTML = "<div style='float:left;width:50%'>\
-		<img src='images/alphabetsImages/K/jacket.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/K/kangaroo.jpg' style='width:100%;height:40%'>\
 		</div>\
 		<div style='float:right;width:50%'>\
-		<img src='images/alphabetsImages/K/jeep.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/K/key.png' style='width:100%;height:40%'>\
 		</div>\
 		<div style='text-align:center;width:50%;float:left'>\
-		<span class='wordFor'>JACKET</span>\
+		<span class='wordFor'>KANGAROO</span>\
 		</div>\
 		<div style='text-align:center;width:50%;float:right'>\
-		<span class='wordFor' >JEEP</span>\
+		<span class='wordFor' >KEY</span>\
 		</div>\
 		<div style='float:left;width:50%'>\
-		<img src='images/alphabetsImages/K/joker.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/K/kite.jpg' style='width:100%;height:40%'>\
 		</div>\
 		<div style='float:right;width:50%'>\
-		<img src='images/alphabetsImages/K/jug.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/K/knife.png' style='width:100%;height:40%'>\
 		</div>\
 		<div style='text-align:center;width:50%;float:left'>\
-		<span class='wordFor'>JOKER</span>\
+		<span class='wordFor'>KITE</span>\
 		</div>\
 		<div style='text-align:center;width:50%;float:right'>\
-		<span class='wordFor'>JUG</span>\
+		<span class='wordFor'>KNIFE</span>\
 		</div>\
 		";
 	}
 	if(page=='12'){
 		document.getElementById('letter').innerHTML = "<img src='images/Letters/L.png' style='width:15%;height:20%;margin:10px'>";
 		document.getElementById('letterFor').innerHTML = "<div style='float:left;width:50%'>\
-		<img src='images/alphabetsImages/L/jacket.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/L/lion.jpg' style='width:100%;height:40%'>\
 		</div>\
 		<div style='float:right;width:50%'>\
-		<img src='images/alphabetsImages/L/jeep.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/L/lamp.jpg' style='width:100%;height:40%'>\
 		</div>\
 		<div style='text-align:center;width:50%;float:left'>\
-		<span class='wordFor'>JACKET</span>\
+		<span class='wordFor'>LION</span>\
 		</div>\
 		<div style='text-align:center;width:50%;float:right'>\
-		<span class='wordFor' >JEEP</span>\
+		<span class='wordFor' >LAMP</span>\
 		</div>\
 		<div style='float:left;width:50%'>\
-		<img src='images/alphabetsImages/L/joker.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/L/lizard.png' style='width:100%;height:40%'>\
 		</div>\
 		<div style='float:right;width:50%'>\
-		<img src='images/alphabetsImages/L/jug.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/L/leg.png' style='width:100%;height:40%'>\
 		</div>\
 		<div style='text-align:center;width:50%;float:left'>\
-		<span class='wordFor'>JOKER</span>\
+		<span class='wordFor'>LIZARD</span>\
 		</div>\
 		<div style='text-align:center;width:50%;float:right'>\
-		<span class='wordFor'>JUG</span>\
+		<span class='wordFor'>LEG</span>\
 		</div>\
 		";
 	}
 	if(page=='13'){
 		document.getElementById('letter').innerHTML = "<img src='images/Letters/M.png' style='width:15%;height:20%;margin:10px'>";
 		document.getElementById('letterFor').innerHTML = "<div style='float:left;width:50%'>\
-		<img src='images/alphabetsImages/M/jacket.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/M/monkey.jpg' style='width:100%;height:40%'>\
 		</div>\
 		<div style='float:right;width:50%'>\
-		<img src='images/alphabetsImages/M/jeep.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/M/moon.jpg' style='width:100%;height:40%'>\
 		</div>\
 		<div style='text-align:center;width:50%;float:left'>\
-		<span class='wordFor'>JACKET</span>\
+		<span class='wordFor'>MONKEY</span>\
 		</div>\
 		<div style='text-align:center;width:50%;float:right'>\
-		<span class='wordFor' >JEEP</span>\
+		<span class='wordFor' >MOON</span>\
 		</div>\
 		<div style='float:left;width:50%'>\
-		<img src='images/alphabetsImages/M/joker.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/M/mango.png' style='width:100%;height:40%'>\
 		</div>\
 		<div style='float:right;width:50%'>\
-		<img src='images/alphabetsImages/M/jug.png' style='width:100%;height:40%'>\
+		<img src='images/alphabetsImages/M/mouse.png' style='width:100%;height:40%'>\
 		</div>\
 		<div style='text-align:center;width:50%;float:left'>\
-		<span class='wordFor'>JOKER</span>\
+		<span class='wordFor'>MANGO</span>\
 		</div>\
 		<div style='text-align:center;width:50%;float:right'>\
-		<span class='wordFor'>JUG</span>\
+		<span class='wordFor'>MOUSE</span>\
 		</div>\
 		";
 	}
+// To be continued
 	if(page=='14'){
 		document.getElementById('letter').innerHTML = "<img src='images/Letters/N.png' style='width:15%;height:20%;margin:10px'>";
 		document.getElementById('letterFor').innerHTML = "<div style='float:left;width:50%'>\
