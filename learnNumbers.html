@@ -2,8 +2,7 @@
 <head>
 	<title>My Learning App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="learnAlphabetsPage.js"></script> 
-	<script src="script.js"></script> 
+	<script src="learnNumberPage.js"></script> 
 	<script src="jquery-1.11.2.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	
@@ -17,23 +16,22 @@
 	<!-- <audio id="switchFlick" src="/android_asset/www/assets/switchFlick.ogg"></audio> -->
 	<!-- <audio id="switchFlick" src="assets/switchFlick.ogg"></audio> -->
 
-<body style='background-image: url("images/learningAlpha.png");'>
+<body style='background-image: url("images/numbers.png");background-size:cover'>
 	<button  id='prevButton' type="button" onclick="prevPage()" style='float:left;margin-right:2.5%' >
 		<span class="catText">PREVIOUS</span>
 	</button>
 	<button id='nextButton' type="button" onclick="nextPage()" style='float:right;margin-right:2.5%' >
 		<span class="catText">NEXT</span>
 	</button>
-	<div id='letter' style='clear:both'>
-		<img src="images/Letters/A.png" style='width:15%;height:20%;margin:10px'>
-	</div>
-	<div id='letterFor'>
-	</div>
+	<table id='numberTable' style='width:100%;border:1px solid'>
+		
+	</table>
+	
 	<script>
 		var queryString = new Array();
 		var query = window.location.search.split('?')[1];
 		var page = query.split('=')[1];
-		learnAlphabetsPage(page);
+		learnNumberPage(page);
 	</script>
 </body>
 </html>
