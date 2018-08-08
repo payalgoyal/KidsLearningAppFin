@@ -81,29 +81,32 @@
 		var query = window.location.search.split('?')[1];
 		var cat = query.split('=')[1];
 		
-		<!-- if (cat == "1"){ -->
+		<!-- if (cat == "1"){
 			<!-- alphabetsIdentify(); -->
-		<!-- } -->
+		<!-- } --> -->
 		if (cat == "1"){
-			window.document.location.href = "match.html?category=1";
+			window.document.location.href = "learnAlphabets.html";
 		}
 		if (cat == "2"){
-			guessIt();
+			window.document.location.href = "match.html?category=1";
 		}
 		if (cat == "3"){
-			colorRecognise();
+			guessIt();
 		}
 		if (cat == "4"){
-			counting();
+			colorRecognise();
 		}
 		if (cat == "5"){
-			recogniseAnimals();
+			counting();
 		}
 		if (cat == "6"){
+			recogniseAnimals();
+		}
+		if (cat == "7"){
 			numberSpell();
 		}
 		
-		if (cat == "7"){
+		if (cat == "8"){
 			window.document.location.href = "activityMatch.html?category=7";
 		}
 		<!-- if (cat == "7"){ -->
