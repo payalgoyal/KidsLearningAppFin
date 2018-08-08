@@ -328,7 +328,24 @@ img, embed, object, video {
 }
 
 .number{
-	width:50%;
+	width:30%;
+	text-align:center;
+	font-weight: 300;
+    font-size: 4em;
+	font-family: myFirstFont;
+}
+
+.numberSpell{
+	width:70%;
+	text-align:center;
+	font-weight: 300;
+    font-size: 4em;
+	font-family: myFirstFont;
+}
+
+.wordFor{
+	width:100%;
+	height:20%;
 	text-align:center;
 	font-weight: 300;
     font-size: 4em;
