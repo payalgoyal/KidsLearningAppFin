@@ -28,6 +28,7 @@ function registerEnteredKey(key){
 		var corr = document.createElement("img");
 		corr.setAttribute("src","images/correct.png");
 		corr.setAttribute("id","correctState");
+		corr.setAttribute("style","height:100%");
 		
 		var gameArea = document.getElementById("ansImage");
 		gameArea.appendChild(corr);
@@ -73,6 +74,7 @@ var compareAns=function(queryLetter,enteredKey) {
 		var corr = document.createElement("img");
 		corr.setAttribute("src","images/correct.png");
 		corr.setAttribute("id","correctState");
+		corr.setAttribute("style","height:100%");
 		
 		var gameArea = document.getElementById("ansImage");
 		gameArea.appendChild(corr);
@@ -93,6 +95,7 @@ var compareAns=function(queryLetter,enteredKey) {
 		var corr = document.createElement("img");
 		corr.setAttribute("src","images/incorrect.png");
 		corr.setAttribute("id","correctState");
+		corr.setAttribute("style","height:100%");
 		
 		var gameArea = document.getElementById("ansImage");
 		gameArea.appendChild(corr);
