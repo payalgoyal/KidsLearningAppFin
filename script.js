@@ -1,4 +1,5 @@
 function registerEnteredKey(key){
+	
 	for (var l = 0;l<optionKeys.length;l++){
 		var ansSpan = document.getElementById("blank"+l);
 		if(ansSpan.innerHTML == "_ "){

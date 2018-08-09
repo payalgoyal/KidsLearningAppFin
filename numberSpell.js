@@ -183,8 +183,12 @@ function numberSpell(){
 	var gameArea = document.getElementById("game_area");
 	
 	ansLength = optionKeys.length;
-	blankCount = ansLength;
-	
+	blankCount = 0;
+	for(var i=0;i<optionKeys.length;i++){
+		if(optionKeys[i] != ' '){
+			blankCount = blankCount+1;
+		}
+	}
 	var blankSpanAnswered = document.getElementsByClassName("blank");
 	while(blankSpanAnswered[0]){
 		blankSpanAnswered[0].parentNode.removeChild(blankSpanAnswered[0]);
