@@ -195,7 +195,12 @@ function numberSpell(){
 				ansSpan.setAttribute("class","blank");
 				ansSpan.setAttribute("id","blank"+i);
 				ansSpan.setAttribute("style","font-weight:500;font-size: 2.5em;");
-				ansSpan.innerHTML = "_ ";
+				if(list[ran].optionValue[i] != ' '){
+					ansSpan.innerHTML = "_ ";
+				}
+				else{
+					ansSpan.innerHTML = "/";
+				}
 				
 				var queryAreaElem = document.getElementById("game_area");
 				queryAreaElem.appendChild(ansSpan);
