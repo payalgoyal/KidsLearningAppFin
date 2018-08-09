@@ -12,6 +12,7 @@
 	<script src="recogniseAnimals.js"></script>
 	<script src="numberSpell.js"></script>
 	<script src="functionalMatch.js"></script>
+	<script src="alphabetTest.js"></script>
 	
 	<!-- <script src="brandList.js"></script>
 	<script src="inventionList.js"></script> -->
@@ -52,16 +53,14 @@
 		<div id="score" style='height:10%;text-align:center'>
 			<img id="scoreImage" src="images/correct.png" style='width:10%;height:100%'><span id="score" style='position:absolute;margin-top:10px'>Chocolates Collected:<span id="collectedChocolates">0</span></span>
 		</div>
-		<div id="game_area" style='height:30%;'>
-			<div id="play_area" style='height:30%'>
+		<div id="game_area" style='height:40%;'>
+			<div id="play_area" style='height:100%'>
 				
 			</div>
 		</div> 
-		<div id="ansImage" style='height:25%;margin-top:-3%;margin-bottom:5%;text-align:center'>
-			</div>
-		<div id="footer">
-				<!-- <button type="button" id="play_again" onclick="playAgain()" value="Play Again">Next</button><br> -->
-				<div id="keyBoard"></div>
+		<div id="keyBoard"></div>
+		</div>
+		<div id="ansImage" style='height:100%;text-align:center;' hidden>
 		</div>
 	</div>
 	
@@ -87,8 +86,14 @@
 		if (cat == "1"){
 			window.document.location.href = "learnAlphabets.html?page=1";
 		}
+		if (cat == "Test1"){
+			window.document.location.href = "alphabetsTest.html";
+		}
 		if (cat == "9"){
 			window.document.location.href = "learnNumbers.html?page=1";
+		}
+		if (cat == "Test9"){
+			numberSpell();
 		}
 		if (cat == "2"){
 			window.document.location.href = "match.html?category=1";

@@ -236,23 +236,21 @@ img, embed, object, video {
 	position: absolute;
 	display: block;
 	max-height:65%;
-	bottom:0;
+	/* bottom:0; */
 	width:100%;
 	clear: both;
-	/* margin-top: 5%;	 */
+	margin-top: 5%;	
 }
 
 .keys{
-	padding: 8px;
-	padding-left: 8px;
-	padding-right: 8px;
 	color: white;
 	/* background-color: #2F4F4F; */
 	/* background-color: #A755C2; */
 	/* background-color: #52154E; */
 	/* background-color: #EDA2F2; */
 	background-color: #102B3F;
-	font-size: 1.4em;
+	font-weight:400;
+	font-size: 4em;
 	font-family: myFirstFont;
 	/* margin: 5px */
 }
@@ -371,6 +369,9 @@ animation-duration: 2s;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -45%;
+	height:100%;
+	position: relative;
 	/* color: white; */
 	/* height: 300px; */
 }

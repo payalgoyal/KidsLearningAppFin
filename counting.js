@@ -32,7 +32,7 @@ function counting(){
 	for (var i=0;i<list[ran].key;i++){
 		var query = document.createElement("img");
 		query.setAttribute("src","images/apple.png");
-		query.setAttribute("style","width:100px;height:60px");
+		query.setAttribute("style","width:100px;height:80px");
 		
 		queryArea = document.getElementById("queryDiv");
 		queryArea.appendChild(query);

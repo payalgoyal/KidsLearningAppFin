@@ -163,7 +163,6 @@ function learnNumberPage(page){
 	}
 	
 	if(page=='5'){
-		document.getElementById('nextButton').disabled = 'true';
 		document.getElementById('numberTable').innerHTML = "<tr><td class='number'>41</td><td class='numberSpell'>FORTY ONE</td></tr><tr> \
 			<td class='number'>42</td>\
 			<td class='numberSpell'>FORTY TWO</td>\
@@ -199,6 +198,46 @@ function learnNumberPage(page){
 		<tr>\
 			<td class='number'>50</td>\
 			<td class='numberSpell'>FIFTY</td>\
+		</tr>\
+		";
+	}
+	if(page=='6'){
+		document.getElementById('nextButton').disabled = 'true';
+		document.getElementById('numberTable').innerHTML = "<tr><td class='number'>60</td><td class='numberSpell'>Sixty</td></tr><tr> \
+			<td class='number'>70</td>\
+			<td class='numberSpell'>SEVENTY</td>\
+		</tr>\
+		<tr>\
+			<td class='number'>80</td>\
+			<td class='numberSpell'>EIGHTY</td>\
+		</tr>\
+		<tr>\
+			<td class='number'>90</td>\
+			<td class='numberSpell'>NINETY</td>\
+		</tr>\
+		<tr>\
+			<td class='number'>100</td>\
+			<td class='numberSpell'>HUNDRED</td>\
+		</tr>\
+		<tr>\
+			<td class='number'>200</td>\
+			<td class='numberSpell'>TWO HUNDRED</td>\
+		</tr>\
+		<tr>\
+			<td class='number'>300</td>\
+			<td class='numberSpell'>THREE HUNDRED</td>\
+		</tr>\
+		<tr>\
+			<td class='number'>1000</td>\
+			<td class='numberSpell'>THOUSAND</td>\
+		</tr>\
+		<tr>\
+			<td class='number'>2000</td>\
+			<td class='numberSpell'>TWO THOUSAND</td>\
+		</tr>\
+		<tr>\
+			<td class='number'>3000</td>\
+			<td class='numberSpell'>THREE THOUSAND</td>\
 		</tr>\
 		";
 	}

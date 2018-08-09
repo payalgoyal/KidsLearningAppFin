@@ -31,6 +31,7 @@ function registerEnteredKey(key){
 		
 		var gameArea = document.getElementById("ansImage");
 		gameArea.appendChild(corr);
+		document.getElementById('ansImage').hidden = false;
 		
 		setTimeout(function(){
 			var ansPara = document.getElementById("ansPara");
@@ -75,6 +76,8 @@ var compareAns=function(queryLetter,enteredKey) {
 		
 		var gameArea = document.getElementById("ansImage");
 		gameArea.appendChild(corr);
+		document.getElementById('ansImage').hidden = false;
+		
 		setTimeout(function(){
 			var ansPara = document.getElementById("ansPara");
 			ansPara.innerHTML = "";
@@ -93,6 +96,8 @@ var compareAns=function(queryLetter,enteredKey) {
 		
 		var gameArea = document.getElementById("ansImage");
 		gameArea.appendChild(corr);
+		document.getElementById('ansImage').hidden = false;
+		
 		setTimeout(function(){
 			var ansPara = document.getElementById("ansPara");
 			ansPara.innerHTML = "";
@@ -113,23 +118,39 @@ function correctAns(){
 	var cat = query.split('=')[1];
 	
 	if (cat == "1"){
-		window.document.location.href = "match.html";
-	}
-	if (cat == "2"){
-		guessIt();
-	}
-	if (cat == "3"){
-		colorRecognise();
-	}
-	if (cat == "4"){
-		counting();
-	}
-	if (cat == "5"){
-		recogniseAnimals();
-	}
-	if (cat == "6"){
-		numberSpell();
-	}
+			window.document.location.href = "learnAlphabets.html?page=1";
+		}
+		if (cat == "Test1"){
+			window.document.location.href = "alphabetsTest.html";
+		}
+		if (cat == "9"){
+			window.document.location.href = "learnNumbers.html?page=1";
+		}
+		if (cat == "Test9"){
+			numberSpell();
+		}
+		if (cat == "2"){
+			window.document.location.href = "match.html?category=1";
+		}
+		if (cat == "3"){
+			guessIt();
+		}
+		if (cat == "4"){
+			colorRecognise();
+		}
+		if (cat == "5"){
+			counting();
+		}
+		if (cat == "6"){
+			recogniseAnimals();
+		}
+		if (cat == "7"){
+			numberSpell();
+		}
+		
+		if (cat == "8"){
+			window.document.location.href = "activityMatch.html?category=7";
+		}
 }
 
 var my_media;
@@ -138,7 +159,7 @@ var playAudio = function(audioID) {
 	var audioElement = document.getElementById(audioID);
 	var url = audioElement.getAttribute('src');
 	
-	my_media = new Media(url,
+	my_media = new Audio(url,
 			// success callback
 			 function () { my_media.release(); },
 			// error callback
