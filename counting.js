@@ -16,6 +16,16 @@ function counting(){
 		optionValue: [3,1,2,5,4]});
 	list.push({key: 1,
 		optionValue: [3,1,2,5,4]});
+	list.push({key: 6,
+		optionValue: [3,1,6,5,4]});
+	list.push({key: 7,
+		optionValue: [7,1,2,5,4]});
+	list.push({key: 8,
+		optionValue: [3,1,2,8,4]});
+	list.push({key: 9,
+		optionValue: [3,9,2,5,4]});
+	list.push({key: 10,
+		optionValue: [3,10,2,5,4]});
 		
 	optionKeys = [];
 	ran = Math.floor(Math.random() * list.length);
@@ -27,7 +37,7 @@ function counting(){
 	
 	var queryDiv = document.createElement("div");
 	queryDiv.setAttribute("id","queryDiv");
-	queryDiv.setAttribute("style","width:70%;float:left");
+	queryDiv.setAttribute("style","width:100%;height:auto;float:left");
 	playArea.appendChild(queryDiv);
 	for (var i=0;i<list[ran].key;i++){
 		var query = document.createElement("img");
@@ -38,15 +48,6 @@ function counting(){
 		queryArea.appendChild(query);
 	}
 	
-	var ansDiv = document.createElement("div");
-	ansDiv.setAttribute("id","ansDiv");
-	ansDiv.setAttribute("style","width:30%;float:right");
-	playArea.appendChild(ansDiv);
-	
-	var ansPara = document.createElement("p");
-	ansPara.setAttribute("id","ansPara");
-	
-	ansDiv.appendChild(ansPara);
 	
 	for (var inc = 0;inc<list[ran].optionValue.length;inc++){
 		optionKeys.push(list[ran].optionValue[inc]);

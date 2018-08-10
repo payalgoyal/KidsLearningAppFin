@@ -36,8 +36,8 @@ function registerEnteredKey(key){
 		document.getElementById('ansImage').hidden = false;
 		
 		setTimeout(function(){
-			var ansPara = document.getElementById("ansPara");
-			ansPara.innerHTML = "";
+			// var ansPara = document.getElementById("ansPara");
+			// ansPara.innerHTML = "";
 			var cS = document.getElementById("correctState");
 			var gA = document.getElementById("ansImage");
 			gA.removeChild(cS);
@@ -53,9 +53,9 @@ function registerKey(keyEntered){
 		keyEntered.setAttribute("style","font-size: 2.5em;");
 		enteredKey = keyEntered.innerHTML;
 		enteredKey = enteredKey.toUpperCase();
-		var ansPara = document.getElementById("ansPara");
-		ansPara.innerHTML = enteredKey;
-		ansPara.setAttribute("style","font-size:5em");
+		// var ansPara = document.getElementById("ansPara");
+		// ansPara.innerHTML = enteredKey;
+		// ansPara.setAttribute("style","font-size:5em");
 		setTimeout(function(){
 			compareAns(queryLetter,enteredKey);
 		},300);
@@ -82,8 +82,8 @@ var compareAns=function(queryLetter,enteredKey) {
 		document.getElementById('ansImage').hidden = false;
 		
 		setTimeout(function(){
-			var ansPara = document.getElementById("ansPara");
-			ansPara.innerHTML = "";
+			// var ansPara = document.getElementById("ansPara");
+			// ansPara.innerHTML = "";
 			var cS = document.getElementById("correctState");
 			var gA = document.getElementById("ansImage");
 			gA.removeChild(cS);
@@ -103,8 +103,8 @@ var compareAns=function(queryLetter,enteredKey) {
 		document.getElementById('ansImage').hidden = false;
 		
 		setTimeout(function(){
-			var ansPara = document.getElementById("ansPara");
-			ansPara.innerHTML = "";
+			// var ansPara = document.getElementById("ansPara");
+			// ansPara.innerHTML = "";
 			var cS = document.getElementById("correctState");
 			var gA = document.getElementById("ansImage");
 			gA.removeChild(cS);

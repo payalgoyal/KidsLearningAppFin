@@ -210,7 +210,7 @@ img, embed, object, video {
 	clear: both;
 	/* min-height:35%; */
 	/* max-height: 50%; */
-	height: 35%;
+	height: 100%;
 	width: 110%;
 	/* background-color: #7192BE; */
 	/* background-color: rgba(156, 85, 165, 0.5); */
@@ -236,7 +236,7 @@ img, embed, object, video {
 	position: absolute;
 	display: block;
 	max-height:65%;
-	/* bottom:0; */
+	bottom:30px;
 	width:100%;
 	clear: both;
 	margin-top: 5%;	

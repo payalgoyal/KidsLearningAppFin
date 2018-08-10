@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>My Learning App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="alphabetTest.js"></script> 
+	<script src="script.js"></script> 
+	<script src="jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+	
+	<script type="text/javascript" src="parkingActivity.js"></script>
+	<!-- <script type="text/javascript" src="phonegap.js"></script> -->
+</head>
+<body style=''>
+<div id="canvasContainer">
+		<canvas id="canvas" style="border:solid black 1px; position:absolute;height:100%;width:100%">
+		  Your browser does not support canvas element.
+		</canvas>
+		<div id='entrance' style='bottom:0;right:50%'>
+		<img src='images/alphabetsImages/C/car.png' style='width:40%;position:absolute;bottom:0;right:30%'/>
+		<p style='color:#a94442;position:absolute;font-size:4em;bottom:0;right:50%''>1</p>
+	</div>
+	<div id='frontWall' style='width: 80%;/* height: 90px; */margin-left: 45px;margin-right: 45px;border-bottom: 90px solid #555;'>
+		
+	</div>
+	<div id='trapezoidLeft' style='border-bottom:450px solid transparent;border-left:85px solid #777;border-right:45px solid transparent;height:100%;width:20%;float:left;margin-top: -90px;'>
+		
+	</div>
+	<div id='trapezoidRight' style='border-bottom:450px solid transparent;border-left:45px solid transparent;border-right:45px solid #777;height:100%;width:20%;float:right;margin-top: -90px;'>
+		
+	</div>
+	<div id='trapezoidMiddle' style='border-bottom:450px solid #111;border-left:85px solid transparent;border-right:45px solid transparent;height:100%;width:100%;margin-top: -90px;'>
+		
+	</div>
+	<div class='parking' id='parking1' style='height:10px;width:50px;background-color:#fff;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:15px'>
+		<p style='color:#a94442;position:absolute;font-size:4em'>1</p>
+	</div>
+	<div class='parking' id='parking2' style='height:10px;width:50px;background-color:#ddd;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:30px'>
+		<p style='color:#a94442;position:absolute;font-size:4em'>2</p>
+	</div>
+	<div class='parking' id='parking3'  style='height:10px;width:50px;background-color:#fff;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:45px'>
+		<p style='color:#a94442;position:absolute;font-size:4em'>3</p>
+	</div>
+	<div class='parking' id='parking4'  style='height:10px;width:50px;background-color:#ddd;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:60px'>
+		<p style='color:#a94442;position:absolute;font-size:4em'>4</p>
+	</div>
+	<div class='parking' id='parking5'  style='height:10px;width:50px;background-color:#fff;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:70px'>
+		<p style='color:#a94442;position:absolute;font-size:4em'>5</p>
+	</div>
+	<div class='parking' id='parking6'  style='height:10px;width:50px;background-color:#ddd;transform:skewY(45deg) rotate(10deg);margin-top:-70px;margin-left:90px'>
+		<p style='color:#a94442;position:absolute;font-size:4em'>6</p>
+	</div>
+	<!-- <div class='parking' id='parking7' style='height:50px;width:5px;background-color:#ddd;margin-top:-40px;margin-left:180px'>
+		<p style='color:#a94442;margin-left:-35px;font-size:4em;'>7</p>
+	</div>
+	<div class='parking' id='parking8'  style='height:50px;width:5px;background-color:#ddd;margin-top:-50px;margin-left:240px'>
+		<p style='color:#a94442;margin-left:-35px;font-size:4em;'>8</p>
+	</div>
+	<div class='parking' id='parking9' style='height:50px;width:5px;background-color:#ddd;transform:skewY(135deg) rotate(10deg);margin-top:-40px;margin-left:300px'>
+		<p style='color:#a94442;margin-left:-35px;font-size:4em;transform:skewY(45deg)'>9</p>
+	</div>
+	<div class='parking' id='parking10' style='height:100px;width:3px;background-color:#ddd;transform:skewY(75deg) rotate(10deg);margin-top:-20px;margin-left:360px'>
+		<p style='color:#a94442;margin-left:-25px;font-size:2em;transform:skewY(-75deg);position:absolute'>10</p>
+	</div>
+	<div class='parking' id='parking11'  style='height:100px;width:3px;background-color:#ddd;transform:skewY(75deg) rotate(10deg);margin-top:-20px;margin-left:360px'>
+		<p style='color:#a94442;margin-left:-25px;font-size:3em;transform:skewY(-75deg);position:absolute'>11</p>
+	</div>
+	<div class='parking' id='parking12'  style='height:100px;width:3px;background-color:#ddd;transform:skewY(75deg) rotate(10deg);margin-top:-20px;margin-left:360px'>
+		<p style='color:#a94442;margin-left:-25px;font-size:3em;transform:skewY(-75deg);position:absolute'>12</p>
+	</div>
+	<div class='parking' id='parking13'  style='height:100px;width:3px;background-color:#ddd;transform:skewY(75deg) rotate(10deg);margin-top:-20px;margin-left:360px'>
+		<p style='color:#a94442;margin-left:-25px;font-size:3em;transform:skewY(-75deg);position:absolute'>13</p>
+	</div> -->
+	
+</div>
+</body>
+<script>
+	<!-- parkingActivity(); -->
+</script>
+</html>

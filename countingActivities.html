@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>My Learning App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="alphabetTest.js"></script> 
+	<script src="script.js"></script> 
+	<script src="jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+	
+	<!-- <script type="text/javascript" src="phonegap.js"></script> -->
+</head>
+<body>
+	<button class="catButtons" type="button" value="1" onclick="countingActivityChange(this)" style='float:left;margin-left:2.5%'>
+		<img class="catImage" src="images/parkingLot.png" />
+		<p>Abacus Counting Activity</p>
+	</button>
+	<button class="catButtons" type="button" value="2" onclick="countingActivityChange(this)" style='float:left;margin-left:2.5%'>
+		<img class="catImage" src="images/parkingLot.png" />
+		<p>Car Parking Activity</p>
+	</button>
+</body>
+
+<script>
+	function countingActivityChange(val){
+		if(val.value == '1'){
+			abacusActivity();
+		}
+		if(val.value == '2'){
+			window.document.location.href = "parkingActivity.html";
+		}
+	}
+</script>
+</html>
