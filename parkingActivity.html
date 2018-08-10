@@ -15,45 +15,19 @@
 	<script type="text/javascript" src="parkingActivity.js"></script>
 	<!-- <script type="text/javascript" src="phonegap.js"></script> -->
 </head>
-<body style=''>
+<body  style='background-color:#000'>
 <div id="canvasContainer">
 		<canvas id="canvas" style="border:solid black 1px; position:absolute;height:100%;width:100%">
 		  Your browser does not support canvas element.
 		</canvas>
 		<div id='entrance' style='bottom:0;right:50%'>
 		<img src='images/alphabetsImages/C/car.png' style='width:40%;position:absolute;bottom:0;right:30%'/>
-		<p style='color:#a94442;position:absolute;font-size:4em;bottom:0;right:50%''>1</p>
+		<p style='color:#a94442;position:absolute;font-size:4em;bottom:0;right:50%'>1</p>
 	</div>
-	<div id='frontWall' style='width: 80%;/* height: 90px; */margin-left: 45px;margin-right: 45px;border-bottom: 90px solid #555;'>
-		
+	
+	<div id='parkingLot'>
 	</div>
-	<div id='trapezoidLeft' style='border-bottom:450px solid transparent;border-left:85px solid #777;border-right:45px solid transparent;height:100%;width:20%;float:left;margin-top: -90px;'>
-		
-	</div>
-	<div id='trapezoidRight' style='border-bottom:450px solid transparent;border-left:45px solid transparent;border-right:45px solid #777;height:100%;width:20%;float:right;margin-top: -90px;'>
-		
-	</div>
-	<div id='trapezoidMiddle' style='border-bottom:450px solid #111;border-left:85px solid transparent;border-right:45px solid transparent;height:100%;width:100%;margin-top: -90px;'>
-		
-	</div>
-	<div class='parking' id='parking1' style='height:10px;width:50px;background-color:#fff;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:15px'>
-		<p style='color:#a94442;position:absolute;font-size:4em'>1</p>
-	</div>
-	<div class='parking' id='parking2' style='height:10px;width:50px;background-color:#ddd;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:30px'>
-		<p style='color:#a94442;position:absolute;font-size:4em'>2</p>
-	</div>
-	<div class='parking' id='parking3'  style='height:10px;width:50px;background-color:#fff;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:45px'>
-		<p style='color:#a94442;position:absolute;font-size:4em'>3</p>
-	</div>
-	<div class='parking' id='parking4'  style='height:10px;width:50px;background-color:#ddd;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:60px'>
-		<p style='color:#a94442;position:absolute;font-size:4em'>4</p>
-	</div>
-	<div class='parking' id='parking5'  style='height:10px;width:50px;background-color:#fff;transform:skewY(45deg) rotate(10deg);margin-top:-80px;margin-left:70px'>
-		<p style='color:#a94442;position:absolute;font-size:4em'>5</p>
-	</div>
-	<div class='parking' id='parking6'  style='height:10px;width:50px;background-color:#ddd;transform:skewY(45deg) rotate(10deg);margin-top:-70px;margin-left:90px'>
-		<p style='color:#a94442;position:absolute;font-size:4em'>6</p>
-	</div>
+	
 	<!-- <div class='parking' id='parking7' style='height:50px;width:5px;background-color:#ddd;margin-top:-40px;margin-left:180px'>
 		<p style='color:#a94442;margin-left:-35px;font-size:4em;'>7</p>
 	</div>
@@ -79,6 +53,6 @@
 </div>
 </body>
 <script>
-	<!-- parkingActivity(); -->
+	parkingActivity('1');
 </script>
 </html>
