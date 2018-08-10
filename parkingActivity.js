@@ -131,14 +131,14 @@ function handleEnd(evt) {
    
    if (leftIndex != null){
 	    var query = document.getElementById("queryCarNumber").innerHTML;
-		var parkingLot = document.getElementById("parking".query);
+		var parkingLotNumber = document.getElementById("parking".query);
 		 // var ans = document.getElementById("answerImage").children[rightIndex];
 		if(parseInt(query) == leftIndex+1){
-			parkingLot.setAttribute("style","background-color:green;");
+			parkingLotNumber.setAttribute("style","background-color:green;");
 			// ans.setAttribute("style","color:green;font-size:50; width:250px;height:60");
 		}
 		else{
-			parkingLot.setAttribute("style","background-color:red;");
+			parkingLotNumber.setAttribute("style","background-color:red;");
 			// ans.setAttribute("style","color:red;font-size:50; width:250px;height:60");
 		}
 		// list[0].traversed[leftIndex] = true;
