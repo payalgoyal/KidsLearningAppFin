@@ -78,7 +78,7 @@ function handleMove(evt) {
       // log("continuing touch "+idx);
 	  
 	  // if (leftIndex != null && list[0].traversed[leftIndex] == false){
-		  if (ongoingTouches[idx].pageY > 300 && ongoingTouches[idx].pageY < 500){
+		  // if (ongoingTouches[idx].pageY > 300 && ongoingTouches[idx].pageY < 500){
 			  ctx.beginPath();
 			   // log("ctx.moveTo(" + ongoingTouches[idx].pageX + ", " + ongoingTouches[idx].pageY + ");");
 			  ctx.moveTo(ongoingTouches[idx].pageX, ongoingTouches[idx].pageY);
@@ -90,7 +90,7 @@ function handleMove(evt) {
 
 			  ongoingTouches.splice(idx, 1, copyTouch(touches[i]));  // swap in the new touch record
 			  // log(".");
-		  }
+		  // }
 	  // }
 	  if (leftIndex == null){
 		  if (ongoingTouches[idx].pageY > 130 && ongoingTouches[idx].pageY < 150 ){
