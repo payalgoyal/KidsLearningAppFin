@@ -1,8 +1,9 @@
 var list = [];
 var optionKeys;
 var blankCount;
-function numberSpell(){
+function numberSpell(page){
 	document.getElementById("wrapper").setAttribute("style","background-image: url('images/numbers.png');background-size:cover");
+	document.getElementById("header").innerHTML = "<img src='images/numberSpellHeader.png' style='margin-top:-5%' />";
 	list.push({key: 1,
 		optionValue: "ONE"});
 		
@@ -167,8 +168,6 @@ function numberSpell(){
 		
 	list.push({key: 100,
 		optionValue: "HUNDRED"});
-	
-	document.getElementById("header").innerHTML = "SPELL NUMBER";
 	
 	ran = Math.floor(Math.random() * list.length);
 	

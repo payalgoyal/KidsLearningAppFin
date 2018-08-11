@@ -18,17 +18,23 @@
 	<!-- <audio id="switchFlick" src="assets/switchFlick.ogg"></audio> -->
 
 <body style='background-image: url("images/learningAlpha.png");'>
-	<button  id='prevButton' type="button" onclick="prevPage()" style='float:left;margin-right:2.5%' >
-		<span class="catText">PREVIOUS</span>
-	</button>
-	<button id='nextButton' type="button" onclick="nextPage()" style='float:right;margin-right:2.5%' >
-		<span class="catText">NEXT</span>
+	<div id='header'>
+		<img src='images/alphabetsHeader.png' style='margin-top:-5%'>
+	</div>
+	<button  id='backButton' type="button" onclick="returnPage()" style='float:left;margin-right:2.5%' >
+		<span class="catText">BACK</span>
 	</button>
 	<div id='letter' style='clear:both'>
 		
 	</div>
 	<div id='letterFor'>
 	</div>
+	<button  id='prevButton' type="button" onclick="prevPage()" style='float:left;margin-right:2.5%' >
+		<span class="catText">PREVIOUS</span>
+	</button>
+	<button id='nextButton' type="button" onclick="nextPage()" style='float:right;margin-right:2.5%' >
+		<span class="catText">NEXT</span>
+	</button>
 	<script>
 		var queryString = new Array();
 		var query = window.location.search.split('?')[1];

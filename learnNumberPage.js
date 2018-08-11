@@ -2,7 +2,7 @@ var pageNumber;
 function learnNumberPage(page){
 	pageNumber = page;
 	if(page=='1'){
-		document.getElementById('prevButton').disabled = 'true';
+		document.getElementById('prevButton').style.visibility = 'hidden';
 		document.getElementById('numberTable').innerHTML = "<tr><td class='number'>1</td><td class='numberSpell'>ONE</td></tr><tr> \
 			<td class='number'>2</td>\
 			<td class='numberSpell'>TWO</td>\
@@ -202,7 +202,7 @@ function learnNumberPage(page){
 		";
 	}
 	if(page=='6'){
-		document.getElementById('nextButton').disabled = 'true';
+		document.getElementById('nextButton').style.visibility = 'hidden';
 		document.getElementById('numberTable').innerHTML = "<tr><td class='number'>60</td><td class='numberSpell'>Sixty</td></tr><tr> \
 			<td class='number'>70</td>\
 			<td class='numberSpell'>SEVENTY</td>\
@@ -241,6 +241,11 @@ function learnNumberPage(page){
 		</tr>\
 		";
 	}
+}
+
+function returnPage(){
+	pageNumber = parseInt(pageNumber) - 1;
+	window.document.location.href = "category.html";
 }
 
 function prevPage(){

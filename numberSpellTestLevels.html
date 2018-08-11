@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>My Learning App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="script.js"></script> 
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+	
+	<!-- <script type="text/javascript" src="phonegap.js"></script> -->
+</head>
+	<!-- <audio id="switchFlick" src="/android_asset/www/assets/switchFlick.ogg"></audio> -->
+	<!-- <audio id="switchFlick" src="assets/switchFlick.ogg"></audio> -->
+
+<body style='background-image: url("images/categoryBg.jpg");'>
+	<div id="wrapper">
+		<div id="header"><img src='images/categoryHeader.png' style='margin-top:-5%'></div>
+		<div>
+			<button class="levelButtons" type="button" value="1" onclick="numberTestChange(this)" style='float:left;margin-left:2.5%'>
+				Numbers 1 to 10
+			</button></br>
+			<button class="levelButtons" type="button" value="2" onclick="numberTestChange(this)" style='float:left;margin-left:2.5%'>
+				Numbers 11 to 20
+			</button></br>
+			<button class="levelButtons" type="button" value="3" onclick="numberTestChange(this)" style='float:left;margin-left:2.5%'>
+				Numbers 21 to 30
+			</button></br>
+			<button class="levelButtons" type="button" value="4" onclick="numberTestChange(this)" style='float:left;margin-left:2.5%'>
+				Numbers 31 to 40
+			</button></br>
+			<button class="levelButtons" type="button" value="5" onclick="numberTestChange(this)" style='float:left;margin-left:2.5%'>
+				Numbers 41 to 50
+			</button></br>
+			
+		</div>
+	</div>
+	
+	<script>
+		function numberTestChange(sel){
+			var pageSelected = sel.value;
+			window.document.location.href = "game.html?category=Test9&page" + pageSelected;
+		}
+	</script>
+</body>
+</html>

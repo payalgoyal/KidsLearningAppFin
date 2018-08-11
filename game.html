@@ -54,11 +54,11 @@
 			<img id="scoreImage" src="images/correct.png" style='width:10%;height:100%'><span id="score" style='position:absolute;margin-top:10px'>Chocolates Collected:<span id="collectedChocolates">0</span></span>
 		</div>
 		<div id="game_area" style='height:40%;'>
-			<div id="play_area" style='height:100%'>
+			<div id="play_area" style=''>
 				
 			</div>
 		</div> 
-		<div id="footer">
+		<div id="footer" style='height:40%'>
 			<div id="keyBoard"></div>
 		</div>
 		</div>
@@ -80,11 +80,8 @@
 		
 		var queryString = new Array();
 		var query = window.location.search.split('?')[1];
-		var cat = query.split('=')[1];
 		
-		<!-- if (cat == "1"){
-			<!-- alphabetsIdentify(); -->
-		<!-- } --> -->
+		var cat = query.split('=')[1];
 		if (cat == "1"){
 			window.document.location.href = "learnAlphabets.html?page=1";
 		}
@@ -119,12 +116,17 @@
 			recogniseAnimals();
 		}
 		if (cat == "7"){
-			numberSpell();
+			window.document.location.href = "numberSpellTestLevels.html";
 		}
 		
 		if (cat == "8"){
 			window.document.location.href = "activityMatch.html?category=7";
 		}
+
+		<!-- if (cat == "1"){
+			<!-- alphabetsIdentify(); -->
+		<!-- } --> -->
+		
 		<!-- if (cat == "7"){ -->
 			<!-- inventionList(); -->
 		<!-- } -->

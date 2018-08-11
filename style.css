@@ -210,7 +210,6 @@ img, embed, object, video {
 	clear: both;
 	/* min-height:35%; */
 	/* max-height: 50%; */
-	height: 100%;
 	width: 110%;
 	/* background-color: #7192BE; */
 	/* background-color: rgba(156, 85, 165, 0.5); */
@@ -235,7 +234,7 @@ img, embed, object, video {
 #footer {
 	position: absolute;
 	display: block;
-	max-height:65%;
+	/* max-height:65%; */
 	bottom:30px;
 	width:100%;
 	clear: both;
@@ -250,9 +249,9 @@ img, embed, object, video {
 	/* background-color: #EDA2F2; */
 	background-color: #102B3F;
 	font-weight:400;
-	font-size: 4em;
+	font-size: 3em;
 	font-family: myFirstFont;
-	/* margin: 5px */
+	margin: 2.5px;
 }
 .chancesLeft {
 	position: relative;
@@ -311,6 +310,14 @@ img, embed, object, video {
 	background: none;
 	width: 45%;
 	height: 50%;
+}
+.levelButtons{
+	border: none;
+	background: none;
+	width: 100%;
+	height: 10%;
+	
+	font-size:2em;
 }
 .catText{
 	/* display: block; */

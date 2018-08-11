@@ -2,7 +2,7 @@ var pageNumber;
 function learnAlphabetsPage(page){
 	pageNumber = page;
 	if(page=='1'){
-		document.getElementById('prevButton').disabled = 'true';
+		document.getElementById('prevButton').style.visibility = 'hidden';
 		document.getElementById('letter').innerHTML = "<img src='images/Letters/A.png' style='width:15%;height:20%;margin:10px'>";
 		document.getElementById('letterFor').innerHTML = "<div style='float:left;width:50%'>\
 		<img src='images/alphabetsImages/A/apple.png' style='width:100%;height:40%'>\
@@ -731,6 +731,11 @@ function learnAlphabetsPage(page){
 		</div>\
 		";
 	}
+}
+
+function returnPage(){
+	pageNumber = parseInt(pageNumber) - 1;
+	window.document.location.href = "category.html";
 }
 
 function prevPage(){

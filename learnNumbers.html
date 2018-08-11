@@ -17,16 +17,19 @@
 	<!-- <audio id="switchFlick" src="assets/switchFlick.ogg"></audio> -->
 
 <body style='background-image: url("images/numbers.png");background-size:cover'>
+	<div id='header'><img src='images/numbersHeader.png' style='margin-top:-5%'></div>
+	<button  id='backButton' type="button" onclick="returnPage()" style='float:left;margin-right:2.5%' >
+		<span class="catText">BACK</span>
+	</button>
+	<table id='numberTable' style='width:100%;border:1px solid'>
+		
+	</table>
 	<button  id='prevButton' type="button" onclick="prevPage()" style='float:left;margin-right:2.5%' >
 		<span class="catText">PREVIOUS</span>
 	</button>
 	<button id='nextButton' type="button" onclick="nextPage()" style='float:right;margin-right:2.5%' >
 		<span class="catText">NEXT</span>
 	</button>
-	<table id='numberTable' style='width:100%;border:1px solid'>
-		
-	</table>
-	
 	<script>
 		var queryString = new Array();
 		var query = window.location.search.split('?')[1];
