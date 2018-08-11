@@ -92,22 +92,24 @@ function handleMove(evt) {
 			  // log(".");
 		  // }
 	  // }
+	  var parkingLotArea = $('#parkingLot').width();
+	  var parkingSpace = parseInt(parkingLotArea) / 5;
 	  if (leftIndex == null){
-		  if (ongoingTouches[idx].pageY > 130 && ongoingTouches[idx].pageY < 150 ){
+		  if (ongoingTouches[idx].pageY < 250 ){
 			  // if (end == 0){
-				  if(touches[i].pageX >= 0 && touches[i].pageX <= 60){
+				  if(touches[i].pageX >= 0 && touches[i].pageX <= parkingSpace){
 					  leftIndex = 0;
 				  }
-				  if(touches[i].pageX > 60 && touches[i].pageX <= 120){
+				  if(touches[i].pageX > parkingSpace && touches[i].pageX <= (parkingSpace * 2)){
 					  leftIndex = 1;
 				  }
-				  if(touches[i].pageX > 120 && touches[i].pageX <= 180){
+				  if(touches[i].pageX > (parkingSpace*2) && touches[i].pageX <= (parkingSpace*3)){
 					  leftIndex = 2;
 				  }
-				  if(touches[i].pageX > 180 && touches[i].pageX <= 240){
+				  if(touches[i].pageX > (parkingSpace*3) && touches[i].pageX <= (parkingSpace*4)){
 					  leftIndex = 3;
 				  }
-				  if(touches[i].pageX > 240 && touches[i].pageX <= 300){
+				  if(touches[i].pageX > (parkingSpace*4) && touches[i].pageX <= (parkingSpace*5)){
 					  leftIndex = 4;
 				  }
 				  log("leftIndex "+ leftIndex);
