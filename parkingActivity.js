@@ -33,9 +33,9 @@ function parkingActivity(val){
 function startup() {
   el = document.getElementsByTagName("canvas")[0];
   el.addEventListener("touchstart", handleStart, false);
-  el.addEventListener("touchend", handleEnd, false);
-  el.addEventListener("touchcancel", handleCancel, false);
-  el.addEventListener("touchmove", handleMove, false);
+  // el.addEventListener("touchend", handleEnd, false);
+  // el.addEventListener("touchcancel", handleCancel, false);
+  // el.addEventListener("touchmove", handleMove, false);
   // log("initialized.");
 }
 
@@ -45,23 +45,7 @@ var ongoingTouches = [];
 function handleStart(evt) {
   evt.preventDefault();
   // log("touchstart.");
-  var el = document.getElementsByTagName("canvas")[0];
-  var ctx = el.getContext("2d");
-  var touches = evt.changedTouches;
-  imageData = ctx.getImageData(0,0,el.width,el.height);
-  end = 0;
-  leftIndex = null;
-  rightIndex = null;
-   for (var i = 0; i < touches.length; i++) {
-    // log("touchstart:" + i + "...");
-    ongoingTouches.push(copyTouch(touches[i]));
-    var color = colorForTouch(touches[i]);
-    ctx.beginPath();
-    ctx.arc(touches[i].pageX, touches[i].pageY, 4, 0, 2 * Math.PI, false);  // a circle at the start
-    ctx.fillStyle = color;
-    ctx.fill();
-    log("touchstart:" + i + ".");
-  }
+ alert(evt.changedTouches[0].pageY)
 }
 
 function handleMove(evt) {
