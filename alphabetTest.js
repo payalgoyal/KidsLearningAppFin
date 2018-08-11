@@ -86,7 +86,7 @@ function checkAns(key){
 		
 		var collectedChoco = document.getElementById('collectedChocolates');
 		document.getElementById('collectedChocolates').innerHTML = parseInt(collectedChoco.innerHTML) + 1;
-		playAudio("correctLetter");
+		// playAudio("correctLetter");
 		var corr = document.createElement("img");
 		corr.setAttribute("src","images/correct.png");
 		corr.setAttribute("id","correctState");
@@ -104,7 +104,7 @@ function checkAns(key){
 		
 	}
 	else{
-		playAudio("wrongAnswerComplete");
+		// playAudio("wrongAnswerComplete");
 		var corr = document.createElement("img");
 		corr.setAttribute("src","images/incorrect.png");
 		corr.setAttribute("id","correctState");
