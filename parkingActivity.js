@@ -36,7 +36,7 @@ function startup() {
   el.addEventListener("touchend", handleEnd, false);
   el.addEventListener("touchcancel", handleCancel, false);
   el.addEventListener("touchmove", handleMove, false);
-  log("initialized.");
+  // log("initialized.");
 }
 
 var imageData;
@@ -53,7 +53,7 @@ function handleStart(evt) {
   leftIndex = null;
   rightIndex = null;
    for (var i = 0; i < touches.length; i++) {
-    log("touchstart:" + i + "...");
+    // log("touchstart:" + i + "...");
     ongoingTouches.push(copyTouch(touches[i]));
     // var color = colorForTouch(touches[i]);
     // ctx.beginPath();
@@ -95,7 +95,7 @@ function handleMove(evt) {
 	 
      
     } else {
-      log("can't figure out which touch to continue");
+      // log("can't figure out which touch to continue");
     }
   }
   
@@ -103,7 +103,7 @@ function handleMove(evt) {
 
 function handleEnd(evt) {
   evt.preventDefault();
-  log("touchend");
+  // log("touchend");
   var el = document.getElementsByTagName("canvas")[0];
   var ctx = el.getContext("2d");
   var touches = evt.changedTouches;
@@ -131,14 +131,14 @@ function handleEnd(evt) {
 			  ongoingTouches.splice(idx, 1);  // remove it; we're done
 		// }
     } else {
-      log("can't figure out which touch to end");
+      // log("can't figure out which touch to end");
     }
   }
 }
 
 function handleCancel(evt) {
   evt.preventDefault();
-  log("touchcancel.");
+  // log("touchcancel.");
   var touches = evt.changedTouches;
   
   for (var i = 0; i < touches.length; i++) {
@@ -155,7 +155,7 @@ function colorForTouch(touch) {
   g = g.toString(16); // make it a hex digit
   b = b.toString(16); // make it a hex digit
   var color = "#" + r + g + b;
-  log("color for touch with identifier " + touch.identifier + " = " + color);
+  // log("color for touch with identifier " + touch.identifier + " = " + color);
   return color;
 }
 
@@ -174,10 +174,7 @@ function ongoingTouchIndexById(idToFind) {
   return -1;    // not found
 }
 
-function log(msg) {
-  var p = document.getElementById('log');
-  p.innerHTML = msg + "\n" + p.innerHTML;
-}
+
 
 function onTouch(evt) {
   evt.preventDefault();
