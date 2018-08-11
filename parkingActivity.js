@@ -92,30 +92,7 @@ function handleMove(evt) {
 			  // log(".");
 		  // }
 	  // }
-	  var parkingLotArea = $('#parkingLot').width();
-	  var parkingSpace = parseInt(parkingLotArea) / 5;
-	  if (leftIndex == null){
-		  if (ongoingTouches[idx].pageY < 250 ){
-			  // if (end == 0){
-				  if(touches[i].pageX >= 0 && touches[i].pageX <= parkingSpace){
-					  leftIndex = 0;
-				  }
-				  if(touches[i].pageX > parkingSpace && touches[i].pageX <= (parkingSpace * 2)){
-					  leftIndex = 1;
-				  }
-				  if(touches[i].pageX > (parkingSpace*2) && touches[i].pageX <= (parkingSpace*3)){
-					  leftIndex = 2;
-				  }
-				  if(touches[i].pageX > (parkingSpace*3) && touches[i].pageX <= (parkingSpace*4)){
-					  leftIndex = 3;
-				  }
-				  if(touches[i].pageX > (parkingSpace*4) && touches[i].pageX <= (parkingSpace*5)){
-					  leftIndex = 4;
-				  }
-				  log("leftIndex "+ leftIndex);
-			  // }
-		  }
-	  }
+	 
      
     } else {
       log("can't figure out which touch to continue");
@@ -131,20 +108,7 @@ function handleEnd(evt) {
   var ctx = el.getContext("2d");
   var touches = evt.changedTouches;
    
-   if (leftIndex != null){
-	    var query = document.getElementById("queryCarNumber").innerHTML;
-		var parkingLotNumber = document.getElementById("parking".query);
-		 // var ans = document.getElementById("answerImage").children[rightIndex];
-		if(parseInt(query) == leftIndex+1){
-			parkingLotNumber.setAttribute("style","background-color:green;");
-			// ans.setAttribute("style","color:green;font-size:50; width:250px;height:60");
-		}
-		else{
-			parkingLotNumber.setAttribute("style","background-color:red;");
-			// ans.setAttribute("style","color:red;font-size:50; width:250px;height:60");
-		}
-		// list[0].traversed[leftIndex] = true;
-   }
+  
    
    correct = 0;
   leftIndex = null;
