@@ -42,7 +42,7 @@ img, embed, object, video {
 	min-height:100%;
 	height: auto;
 	position:relative;
-	background-color: rgba(255, 246, 141, 0.5);
+	/* background-color: rgba(255, 246, 141, 0.5); */
 }
 #header {
 	display: block;

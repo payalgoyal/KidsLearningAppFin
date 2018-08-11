@@ -129,3 +129,7 @@ function nextQuestion(){
 	}
 	alphabetTest();
 }
+
+function returnPage(){
+	window.document.location.href = "category.html";
+}

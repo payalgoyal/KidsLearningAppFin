@@ -246,3 +246,7 @@ function numberSpell(page){
 	// var pAgain = document.getElementById('play_again');
 		// pAgain.setAttribute("style","visibility:hidden");
 }
+
+function returnPage(){
+	window.document.location.href = "category.html";
+}

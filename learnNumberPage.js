@@ -244,7 +244,6 @@ function learnNumberPage(page){
 }
 
 function returnPage(){
-	pageNumber = parseInt(pageNumber) - 1;
 	window.document.location.href = "category.html";
 }
 
